@@ -1,0 +1,26 @@
+<div class="toolbar" role="banner">
+    <span class="header modalHeader">{{data.name}}'s Todos</span><button mat-button  class="alignRight blueButton" style="float: right" [mat-dialog-close]>Back</button>
+  </div>
+  <div class="borderBottom toolbarBorderBottom"></div>
+
+  <label class="drpdwnLabel">Sort By:</label><br>
+  <select class="modal-margin" #mySelect style="width:20%;" (change)='onDropdownselect(mySelect.value)'>
+      <option *ngFor="let item of sortDropdown" [value]="item.value">
+        {{item.viewValue}}
+      </option>
+  </select>
+
+  <div class="modal-margin">
+    <div>
+      <table>
+          <tr class="borderBottom" *ngFor="let todo of toDoList">
+              <td><input type="checkbox" name="completedCheck"  [checked]= "todo.completed"/>
+                <label for="completedCheck" class="checkLabel strikethrough">{{todo.title}}</label>
+            </td>
+              <!-- <td [ngClass]="">{{todo.title}}</td> -->
+              <td><mat-icon style="color:gray;" (click)="deleteTodo(todo)">delete</mat-icon></td>
+          </tr>
+      </table>
+    </div>
+  </div>
+

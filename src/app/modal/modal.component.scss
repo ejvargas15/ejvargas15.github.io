@@ -1,0 +1,52 @@
+.header{
+  font-size: x-large;
+  font-weight: bold;
+
+}
+
+.blueButton{
+  background-color: blue;
+  color: white;
+  height: 32px;
+}
+
+.alignRight{
+    text-align: right;
+  }
+  .borderBottom{
+    margin: 2%;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+}
+
+.toolbarBorderBottom{
+  width: 100%;
+  margin-top: 3%;
+}
+
+table{
+    border: 1px solid gray;
+}
+
+input[type=checkbox]:checked + label.strikethrough{
+  text-decoration: line-through;
+}
+.drpdwnLabel{
+  font-size: small;
+}
+.modal-margin{
+  margin: 2%;
+  border:1px solid black;
+  border-radius: 5px;
+}
+.innerContent{
+  margin:2%;
+}
+table{
+  width:100%;
+  border: none;
+  margin: 2px;
+}
+.checkLabel{
+  margin-left: 2px;
+}

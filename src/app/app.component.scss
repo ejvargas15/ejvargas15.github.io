@@ -1,0 +1,174 @@
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: black;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .card-data {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 45%;
+    // height: 100px;
+    // line-height: 400px;
+    // background-color: grey;
+    margin: 5px;
+    // color: white;
+    // text-align: center;
+    // vertical-align: middle;
+  }
+  .cardHeader{
+    width: 100%;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .headerMargin{
+    margin-bottom: 500px;
+  }
+
+
+  .headerTable{
+    tr{
+      line-height: 30px;
+    }
+  }
+  .phoneNumber{
+    width: 50%;
+    font-size: small;
+    white-space: nowrap;
+  }
+  .email{
+    width: 50%;
+    font-size: small;
+    white-space: nowrap;
+  }
+  mat-icon{
+    font-size: medium;
+  }
+  mat-accordion{
+    mat-expansion-panel{
+        background: white;
+        mat-expansion-panel-header{
+          height: 10%;
+            mat-panel-title, mat-panel-description{
+                color: black;
+            }
+        }
+    }
+    p{
+        color: black
+    }
+  }
+  .borderBottom{
+      border-bottom: 1px solid lightgray;
+      width: 100%;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+  .blackFont{
+    color:black;
+  }
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid lightgray;
+    
+  }
+
+  .header{
+    font-size: xx-large;
+    color: black;
+    font-weight: 600;
+    margin-left: 1%;
+  }
+
+  .content {
+    display: flex;
+    margin: 75px auto 32px;
+    padding: 0 16px;
+    max-width: 1000px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  svg.material-icons {
+    height: 24px;
+    width: auto;
+  }
+
+  svg.material-icons:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .card svg.material-icons path {
+    fill: #888;
+  }
+mat-icon{
+  color: blue;
+}
+
+.accordianArrow{
+  color: gray;
+  text-align: right;
+}
+
+.alignRight{
+ float: right;
+}
+
+ 
+
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {
+    .card-container > *:not(.circle-link) ,
+    .terminal {
+      width: 100%;
+    }
+
+    .card:not(.highlight-card) {
+      height: 16px;
+      margin: 8px 0;
+    }
+
+    .card.highlight-card span {
+      margin-left: 72px;
+    }
+
+    svg#rocket-smoke {
+      right: 120px;
+      transform: rotate(-5deg);
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    svg#rocket-smoke {
+      display: none;
+      visibility: hidden;
+    }
+  }
